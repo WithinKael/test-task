@@ -1,0 +1,159 @@
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(100, 100, 100, 0.8);
+  z-index: 1200;
+  backdrop-filter: blur(1px);
+}
+
+.Modal {
+  position: relative;
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 24px);
+  border-radius: 5px;
+  background-color: rgb(245, 250, 254);
+}
+
+.btnCloseModal {
+  position: absolute;
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 24px;
+  border: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  top: 12px;
+  right: 12px;
+  transition: all 0.1s;
+  font-size: 17px;
+  padding-left: 6px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.labelName,
+.labelMembers,
+.labelOwner {
+  margin-bottom: 8px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.inputName,
+.inputMembers,
+.inputOwner {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.inputName:focus {
+  border-color: rgba(58, 58, 58, 0.959);
+  box-shadow: 0 0 2px rgba(56, 56, 56, 0.959);
+}
+.inputMembers:focus {
+  border-color: rgba(58, 58, 58, 0.959);
+  box-shadow: 0 0 2px rgba(56, 56, 56, 0.959);
+}
+.inputOwner:focus {
+  border-color: rgba(58, 58, 58, 0.959);
+  box-shadow: 0 0 2px rgba(56, 56, 56, 0.959);
+}
+
+.inputRadioWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.modalBtn {
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: rgb(245, 250, 254);
+  cursor: pointer;
+  border: 0.5px solid rgb(192, 228, 252);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modalBtn:hover {
+  background-color: rgb(192, 228, 252);
+}
+
+.svgDots {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  fill: rgb(165, 165, 165);
+}
+
+.svgDots:hover {
+  fill: rgb(12, 12, 12);
+}
+
+.containerPopover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+  border: none;
+  padding: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.popoverBtn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  column-gap: 5px;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.popoverBtn:hover {
+  background-color: rgb(245, 250, 254);
+}
+
+.destructivePopoverBtn:hover {
+  background-color: rgba(255, 91, 91, 0.127);
+}
+
+.svgDeleteTeam {
+  width: 16px;
+  height: 16px;
+}
+
+.svgInviteMember {
+  width: 15px;
+  height: 15px;
+}
